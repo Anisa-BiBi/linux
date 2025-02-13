@@ -1,0 +1,11 @@
+sudo su
+yum update -y
+yum install git -y
+which git
+git --version
+mkdir dir-name
+cd directory
+git init
+cat > filename
+edit and save file
+...
