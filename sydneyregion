@@ -1,2 +1,25 @@
+sudo su
+yum update -y
+yum install git -y
+which git
+git --version
+mkdir dir-name
+cd directory
+git init
+cat > filename
+edit and save file
+git status
+git add .
+git status
+git log
+git show [commit id]
+git commit -m "commit msg you wanna gave"
+git remote add origin https://github.com/user-name/repo.git
+git config --global user.email "-------@gmail.com"
+git config --global user.name "--------"
+git push -u origin master
+(if the above command shows error then generate token and use it to access github repo remotely)
+git remote set-url origin https://----token----@github.com/user-name/repo
+(then use push command again)
 happy learning
 🧐
