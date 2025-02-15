@@ -23,3 +23,5 @@ git remote set-url origin https://----token----@github.com/user-name/repo
 (then use push command again)
 happy learning
 🧐
+git pull --rebase origin master
+(next day use the above command first and make changes)
