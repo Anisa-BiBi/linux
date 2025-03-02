@@ -1,13 +1,14 @@
+            --------GITHUB & GIT COMMANDS---------
 sudo su
 yum update -y
 yum install git -y
 which git
 git --version
 mkdir dir-name
-cd directory
+cd dir-name
 git init
 cat > filename
-edit and save file
+(edit and save file)
 git status
 git add .
 git status
@@ -18,10 +19,35 @@ git remote add origin https://github.com/user-name/repo.git
 git config --global user.email "-------@gmail.com"
 git config --global user.name "--------"
 git push -u origin master
-(if the above command shows error then generate token and use it to access github repo remotely)
+(if the above command shows error due to different autherization strategis for http and ssh so to solve this using http requst type generate token 
+and use it to access github repo remotely)
 git remote set-url origin https://----token----@github.com/user-name/repo
 (then use push command again)
 happy learning
 🧐
 git pull --rebase origin master
-(next day use the above command first and make changes)
+(next day use the above command first to pull the changes made by other contributers of the project so that you can work on the updated code)
+
+-------BRANCHING---------
+sudo su
+(access the desired local repo you wanna works on by making different branches)
+git log --oneline 
+(above is the command to see all the commits made on oneline each)
+git branch (command to list all the branches while the * sign will be used with the current branch where you are working)
+git branch <branch-name>    (command to create new branch)
+git checkout <branch-name>    (to the branch you want to switch)
+git branch -d <branch-name>    (to delete any branch)
+git branch -D <branch-name>     (after the merging of branch you can delete it with this command)
+
+--------MERGING----------
+(first make sure that you are in the master/main branch then run the given command to merge it)
+git merge <branch-name>
+git log       (check to verify the merge)
+(By merging the data copies from sub-branch to the main/master branch so after merging you can delete the sub-branch)
+
+--------GIT CONFLICT---------
+(when same file having different content in different branches, if you do merge then conflict occurs its not something you have to worry about rather its a way that 
+you can understand the branching log very well- let me tell you how when we make a child branch from the main/master branch to work on new feature etc, so in this 
+process the whole data of the parent branch gets copied to the child branch all its files gets copied everything now you make additions to the sub-branch and after 
+doing all the changes when you merge with parent-branch which is main/master A CONFLICT occurs bcz the data gets appended in the files. Now we resolve the conflict 
+first then commit)
